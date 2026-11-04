@@ -30,8 +30,8 @@ Nota: en una subruta de `github.io`, los buscadores no leen `robots.txt`; con un
 |---|---|---|
 | **Dominio definitivo** | `index.html` (canonical, Open Graph, JSON-LD), `robots.txt`, `sitemap.xml`, `404.html` | Publicado en `https://larsbologna.github.io/WEB-NADIA/`. Al pasar a un dominio propio, reemplazar esa URL en esos archivos y cambiar las rutas `/WEB-NADIA/` de `404.html` por `/`. |
 | **Matrícula profesional** | Sección "Sobre mí" (lista `.facts`) | No se pudo verificar su web actual, así que **no se muestra**. Agregar una fila `<div><dt>Matrícula</dt><dd>…</dd></div>` con el dato verificado. |
-| **Fotografía de Nadia** | `index.html` → `.about-media img` | Hoy muestra una ilustración de mesa de trabajo. Reemplazar por una foto profesional en WebP/AVIF (proporción 9:11, unos 1200 × 1467 px). |
-| **Foto del hero** | `index.html` → `.hero-image img` | Ilustración original de una vivienda serrana. Si Nadia tiene una fotografía propia de calidad, reemplazarla por un WebP de unos 1600 × 2000 px. |
+| **Fotografía de Nadia** | `index.html` → `.about-media img` | Hoy muestra una ilustración de mesa de trabajo dentro de una lámina con rótulo. Reemplazar por una foto profesional en WebP/AVIF (proporción 9:11, unos 1200 × 1467 px). |
+| **Imagen del hero** | `index.html` → `.hero-sheet` | Alzado ilustrativo dibujado en SVG, con rótulo "Dibujo ilustrativo". Si Nadia tiene una fotografía propia de calidad, puede reemplazar el `<svg class="elevation">` por un `<img>` en WebP. |
 | **Proyectos** | `js/content.js` → `projects` | Vacío: se muestra "Portfolio en preparación". Cargar solo obras reales con fotos propias; la galería editorial y el visor se activan solos. |
 | **Reseñas de Google** | `js/content.js` → `reviews` | Vacío: se muestra el bloque de Google con el enlace "Ver todas las reseñas". Copiar textualmente reseñas reales del perfil. |
 | **Correo electrónico** | Sección Contacto (`.contact-list`) | Agregar cuando Nadia lo confirme. |
