@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://larsbologna.github.io/WEB-NADIA/">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="Nadia Banegas">
-  <meta name="theme-color" content="#F7F6F2">
+  <meta name="theme-color" content="#20211F">
   <meta name="geo.region" content="AR-X">
   <meta name="geo.placename" content="Anisacate, Córdoba, Argentina">
 
@@ -35,7 +35,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap">
   <link rel="preload" href="assets/img/hero-vivienda.svg" as="image" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
   <script>document.documentElement.classList.add('js')</script>
@@ -108,6 +108,7 @@
   <header class="site-header" data-header>
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Nadia Banegas, arquitecta — ir al inicio">
+        <span class="brand-mark" aria-hidden="true">NB</span>
         <span class="brand-name">Nadia Banegas</span>
         <span class="brand-sep" aria-hidden="true">/</span>
         <span class="brand-role">Arquitecta</span>
@@ -140,9 +141,13 @@
 
     <!-- ============ 1 · HERO ============ -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="container hero-grid">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/img/hero-vivienda.svg" alt="" width="1600" height="1200" fetchpriority="high">
+      </div>
+
+      <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow reveal">Arquitecta en Anisacate, Córdoba</p>
+          <p class="eyebrow eyebrow-light reveal">Arquitecta en Anisacate, Córdoba</p>
           <h1 class="hero-title reveal" id="hero-title">
             Arquitectura pensada para tu <em>forma de vivir.</em>
           </h1>
@@ -150,33 +155,40 @@
             Proyectos, documentación y acompañamiento técnico para construir, transformar y regularizar tus espacios.
           </p>
           <div class="hero-actions reveal">
-            <a class="btn btn-dark btn-lg" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
+            <a class="btn btn-accent btn-lg" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
               Contame sobre tu proyecto <span class="btn-arrow" aria-hidden="true">→</span>
             </a>
-            <a class="btn btn-link" href="#servicios">Conocé mis servicios</a>
+            <a class="btn btn-ghost-light btn-lg" href="#servicios">Conocé mis servicios</a>
           </div>
           <p class="hero-note reveal">
             <span class="dot" aria-hidden="true"></span>
             Atención profesional en Anisacate y localidades cercanas.
           </p>
         </div>
-
-        <figure class="hero-media">
-          <div class="hero-image">
-            <img src="assets/img/hero-vivienda.svg" alt="Ilustración de una vivienda contemporánea integrada al paisaje serrano de Córdoba al atardecer" width="1200" height="1500" fetchpriority="high">
-          </div>
-          <figcaption class="hero-caption">
-            <span>31°43′ S · 64°24′ O</span>
-            <span>Valle de Paravachasca</span>
-          </figcaption>
-        </figure>
       </div>
 
-      <a class="scroll-cue" href="#propuesta" aria-label="Explorar la página">
-        <span class="scroll-cue-line" aria-hidden="true"></span>
-        <span class="scroll-cue-text">Explorar</span>
-      </a>
+      <div class="hero-bar">
+        <div class="container hero-bar-inner">
+          <a class="scroll-cue" href="#propuesta" aria-label="Explorar la página">
+            <span class="scroll-cue-line" aria-hidden="true"></span>
+            <span class="scroll-cue-text">Explorar</span>
+          </a>
+          <ul class="hero-facts" aria-label="Datos principales">
+            <li><span>Formación</span>FAUD · Universidad Nacional de Córdoba</li>
+            <li><span>Zona</span>Anisacate y localidades cercanas</li>
+            <li><span>Atención</span>Directa y personalizada</li>
+          </ul>
+        </div>
+      </div>
     </section>
+
+    <!-- Franja de servicios -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Planos municipales</span><span>Relevamientos</span><span>Proyectos arquitectónicos</span><span>Ampliaciones y remodelaciones</span><span>Conducción técnica de obra</span><span>Asesoramiento profesional</span><span>Gestión municipal</span>
+        <span>Planos municipales</span><span>Relevamientos</span><span>Proyectos arquitectónicos</span><span>Ampliaciones y remodelaciones</span><span>Conducción técnica de obra</span><span>Asesoramiento profesional</span><span>Gestión municipal</span>
+      </div>
+    </div>
 
     <!-- ============ 2 · PROPUESTA DE VALOR ============ -->
     <section class="section value" id="propuesta" aria-labelledby="value-title">
@@ -303,7 +315,7 @@
 
         <div class="inline-cta reveal">
           <p class="inline-cta-text">¿No sabés bien qué servicio necesitás? <span>Contame tu situación y lo vemos juntos.</span></p>
-          <a class="btn btn-dark" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
+          <a class="btn btn-accent" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
             Contame sobre tu proyecto <span class="btn-arrow" aria-hidden="true">→</span>
           </a>
         </div>
@@ -314,9 +326,10 @@
     <section class="section about" id="sobre-mi" aria-labelledby="about-title">
       <div class="container about-grid">
         <figure class="about-media reveal">
+          <span class="about-frame" aria-hidden="true"></span>
           <!-- Reemplazar por una fotografía profesional de Nadia (ver README). -->
           <img src="assets/img/estudio-mesa.svg" alt="Ilustración de una mesa de trabajo de arquitectura con planos, escalímetro y lápiz" width="900" height="1100" loading="lazy" decoding="async">
-          <figcaption class="about-caption">Mesa de trabajo</figcaption>
+          <figcaption class="about-badge"><strong>FAUD</strong><span>Universidad Nacional de Córdoba</span></figcaption>
         </figure>
 
         <div class="about-copy">
@@ -370,7 +383,7 @@
     </section>
 
     <!-- ============ 6 · PROCESO ============ -->
-    <section class="section process" id="proceso" aria-labelledby="process-title">
+    <section class="section process is-dark" id="proceso" aria-labelledby="process-title">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow reveal">Proceso</p>
