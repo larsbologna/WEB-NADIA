@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Dibujo de relevamiento con cotas y mediciones"><rect width="800" height="600" fill="#EDE8DF"/><g stroke="#20211F" stroke-opacity=".06" stroke-width="1"><path d="M0 50H800M0 100H800M0 150H800M0 200H800M0 250H800M0 300H800M0 350H800M0 400H800M0 450H800M0 500H800M0 550H800M50 0V600M100 0V600M150 0V600M200 0V600M250 0V600M300 0V600M350 0V600M400 0V600M450 0V600M500 0V600M550 0V600M600 0V600M650 0V600M700 0V600M750 0V600"/></g>
+<g fill="none" stroke="#20211F" stroke-linecap="square">
+  <path d="M170 170 L560 150 L590 420 L190 440 Z" stroke-width="4"/>
+  <path d="M170 170 L590 420" stroke-width="1" stroke-dasharray="6 6" stroke="#B77A5B"/>
+  <path d="M560 150 L190 440" stroke-width="1" stroke-dasharray="6 6" stroke="#B77A5B"/>
+  <path d="M168 120 L558 100 M168 112 L168 128 M558 92 L558 108" stroke-width="1.2"/>
+  <path d="M640 150 L670 418 M632 151 L648 149 M662 419 L678 417" stroke-width="1.2"/>
+  <path d="M190 490 L590 470 M190 482 V498 M590 462 V478" stroke-width="1.2"/>
+  <path d="M120 172 L140 440 M112 173 H128 M132 441 H148" stroke-width="1.2"/>
+</g>
+<g fill="#B77A5B"><circle cx="170" cy="170" r="7"/><circle cx="560" cy="150" r="7"/><circle cx="590" cy="420" r="7"/><circle cx="190" cy="440" r="7"/></g>
+<g fill="none" stroke="#B77A5B" stroke-width="1.2"><circle cx="170" cy="170" r="16"/><circle cx="590" cy="420" r="16"/></g>
+<g font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="2" fill="#20211F">
+  <text x="363" y="98" text-anchor="middle" transform="rotate(-3 363 98)">15.62</text>
+  <text x="690" y="290" transform="rotate(84 690 290)" text-anchor="middle">10.74</text>
+  <text x="390" y="502" text-anchor="middle" transform="rotate(-3 390 502)">16.03</text>
+  <text x="100" y="306" transform="rotate(-86 100 306)" text-anchor="middle">10.81</text>
+  <text x="200" y="160" font-size="11" fill="#777873">A</text><text x="545" y="140" font-size="11" fill="#777873">B</text>
+  <text x="605" y="440" font-size="11" fill="#777873">C</text><text x="175" y="462" font-size="11" fill="#777873">D</text>
+  <text x="380" y="310" font-size="11" fill="#777873" text-anchor="middle">ESTADO ACTUAL</text>
+</g>
+</svg>
