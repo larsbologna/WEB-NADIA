@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Boceto de fachada con anotaciones y alternativas"><rect width="800" height="600" fill="#EDE8DF"/><g stroke="#20211F" stroke-opacity=".06" stroke-width="1"><path d="M0 50H800M0 100H800M0 150H800M0 200H800M0 250H800M0 300H800M0 350H800M0 400H800M0 450H800M0 500H800M0 550H800M50 0V600M100 0V600M150 0V600M200 0V600M250 0V600M300 0V600M350 0V600M400 0V600M450 0V600M500 0V600M550 0V600M600 0V600M650 0V600M700 0V600M750 0V600"/></g>
+<g fill="none" stroke="#20211F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M130 420 C240 418 420 422 520 419"/>
+  <path d="M170 419 V250 H460 V419" />
+  <path d="M160 252 L470 246"/>
+  <path d="M210 300 h80 v60 h-80z M350 300 h70 v119"/>
+</g>
+<rect x="480" y="130" width="240" height="300" fill="#F7F6F2" opacity=".75" transform="rotate(4 600 280)"/>
+<g fill="none" stroke="#777873" stroke-width="1.6" stroke-linecap="round" transform="rotate(4 600 280)">
+  <path d="M510 380 H690 M530 380 V280 L600 230 L670 280 V380"/>
+  <path d="M570 320 h40 v60"/>
+</g>
+<g fill="none" stroke="#B77A5B" stroke-width="2" stroke-linecap="round">
+  <ellipse cx="250" cy="330" rx="70" ry="50"/>
+  <path d="M320 320 C380 260 420 200 470 180"/>
+  <path d="M460 174 L472 180 L464 192"/>
+</g>
+<g font-family="Georgia, serif" font-style="italic" font-size="20" fill="#B77A5B"><text x="250" y="170">¿más luz?</text><text x="560" y="460">alternativa B</text></g>
+<g font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#777873"><text x="130" y="460">ALTERNATIVA A</text></g>
+</svg>

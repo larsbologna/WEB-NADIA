@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Ilustración de una mesa de trabajo de arquitectura con planos, escalímetro y lápiz">
+  <defs>
+    <filter id="g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .13  0 0 0 0 .13  0 0 0 0 .12  0 0 0 .5 0"/></filter>
+  </defs>
+  <rect width="900" height="1100" fill="#D9D0C2"/>
+  <rect x="0" y="0" width="900" height="1100" fill="#CFC5B5" opacity=".5"/>
+  <!-- luz de ventana -->
+  <path d="M0 0 L520 0 L900 520 L900 760 Z" fill="#F4EFE7" opacity=".35"/>
+  <!-- plano grande -->
+  <g transform="rotate(-6 450 520)">
+    <rect x="140" y="200" width="600" height="720" fill="#F7F6F2"/>
+    <rect x="140" y="200" width="600" height="720" fill="none" stroke="#20211F" stroke-opacity=".08"/>
+    <g fill="none" stroke="#20211F" stroke-linecap="square">
+      <path d="M220 300 H660 V700 H220 Z" stroke-width="7"/>
+      <path d="M440 300 V470 M220 470 H360 M400 470 H560 M600 470 H660 M530 470 V700" stroke-width="4"/>
+      <path d="M360 470 A40 40 0 0 1 400 430 M400 470 V430" stroke-width="1.2"/>
+      <path d="M220 760 H660 M220 750 V770 M660 750 V770" stroke-width="1.2"/>
+    </g>
+    <rect x="560" y="800" width="140" height="80" fill="none" stroke="#20211F" stroke-width="1.2"/>
+    <rect x="560" y="800" width="140" height="22" fill="#B77A5B"/>
+  </g>
+  <!-- papel calco -->
+  <g transform="rotate(8 600 300)"><rect x="470" y="120" width="320" height="380" fill="#FFFFFF" opacity=".55"/>
+    <path d="M520 420 C560 360 620 330 700 320" fill="none" stroke="#B77A5B" stroke-width="2"/>
+    <path d="M520 220 H740 M520 260 H700" stroke="#777873" stroke-width="1.2"/></g>
+  <!-- escalímetro -->
+  <g transform="rotate(-28 380 960)">
+    <path d="M120 940 L700 940 L700 980 L120 980 Z" fill="#EDE8DF"/>
+    <path d="M120 980 L700 980 L690 1000 L130 1000 Z" fill="#BDB3A3"/>
+    <g stroke="#20211F" stroke-width="1.2"><path d="M140 940 v10 M160 940 v6 M180 940 v10 M200 940 v6 M220 940 v10 M240 940 v6 M260 940 v10 M280 940 v6 M300 940 v10 M320 940 v6 M340 940 v10 M360 940 v6 M380 940 v10 M400 940 v6 M420 940 v10 M440 940 v6 M460 940 v10 M480 940 v6 M500 940 v10 M520 940 v6 M540 940 v10 M560 940 v6 M580 940 v10 M600 940 v6 M620 940 v10 M640 940 v6 M660 940 v10"/></g>
+  </g>
+  <!-- lápiz -->
+  <g transform="rotate(32 720 700)">
+    <rect x="560" y="690" width="300" height="18" fill="#20211F"/>
+    <path d="M560 690 L520 699 L560 708 Z" fill="#E2C9A8"/>
+    <path d="M520 699 L532 696 L532 702 Z" fill="#20211F"/>
+    <rect x="850" y="690" width="16" height="18" fill="#B77A5B"/>
+  </g>
+  <!-- taza -->
+  <ellipse cx="160" cy="180" rx="80" ry="80" fill="#20211F" opacity=".1"/>
+  <circle cx="150" cy="170" r="72" fill="#F7F6F2"/>
+  <circle cx="150" cy="170" r="56" fill="#6E4A37"/>
+  <rect width="900" height="1100" filter="url(#g)" opacity=".3"/>
+</svg>
