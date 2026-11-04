@@ -8,7 +8,8 @@
   <link rel="canonical" href="https://larsbologna.github.io/WEB-NADIA/">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="Nadia Banegas">
-  <meta name="theme-color" content="#20211F">
+  <meta name="theme-color" content="#F7F6F2">
+  <meta name="color-scheme" content="only light">
   <meta name="geo.region" content="AR-X">
   <meta name="geo.placename" content="Anisacate, Córdoba, Argentina">
 
@@ -35,8 +36,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap">
-  <link rel="preload" href="assets/img/hero-vivienda.svg" as="image" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
   <script>document.documentElement.classList.add('js')</script>
 
@@ -100,18 +100,74 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué necesito para realizar un plano municipal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende del tipo de trámite y de los requisitos de cada municipio. En general, se parte de la documentación de la propiedad (por ejemplo, escritura o boleto de compraventa y datos catastrales) y de un relevamiento o proyecto de lo que está construido o se va a construir. En una primera consulta reviso tu caso y te indico qué documentación conviene reunir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo regularizar una construcción existente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En muchos casos es posible iniciar un trámite de regularización. La viabilidad depende de las características de la construcción y de la normativa vigente en cada localidad, por eso se analiza caso por caso. El primer paso suele ser un relevamiento del estado actual para conocer la situación con precisión y definir cómo avanzar. La aprobación final depende siempre del organismo correspondiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Realizás proyectos de ampliación y remodelación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Trabajo sobre espacios existentes para mejorar su funcionalidad, su distribución y su estética. Partimos de lo que ya está construido, evaluamos las posibilidades y desarrollamos una propuesta adaptada a tus necesidades, junto con la documentación que el trabajo requiera."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajás en localidades cercanas a Anisacate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Atiendo en Anisacate y en localidades cercanas. Si tu propiedad está en Alta Gracia o en otra localidad de la zona, escribime con la ubicación y conversamos sobre la posibilidad de acompañarte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo puedo solicitar un presupuesto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Escribime por WhatsApp y contame qué necesitás, dónde está la propiedad y, si los tenés, compartime fotos o documentación. Con esa información puedo orientarte y, si hace falta, coordinamos una visita para conocer el lugar y preparar una propuesta con el alcance del trabajo y los honorarios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo consultarte antes de comenzar una obra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, y es lo más recomendable. Consultar antes de empezar permite evaluar alternativas, anticipar requisitos técnicos y municipales y tomar decisiones con más información. El asesoramiento profesional está pensado justamente para esa etapa."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <!-- ============ NAVEGACIÓN ============ -->
   <header class="site-header" data-header>
-    <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Nadia Banegas, arquitecta — ir al inicio">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="Nadia Banegas, arquitecta. Ir al inicio">
         <span class="brand-mark" aria-hidden="true">NB</span>
-        <span class="brand-name">Nadia Banegas</span>
-        <span class="brand-sep" aria-hidden="true">/</span>
-        <span class="brand-role">Arquitecta</span>
+        <span class="brand-text">
+          <span class="brand-name">Nadia Banegas</span>
+          <span class="brand-role">Arquitecta</span>
+        </span>
       </a>
 
       <nav class="nav" aria-label="Navegación principal">
@@ -128,8 +184,8 @@
             <li><a href="#sobre-mi" data-nav-link>Sobre mí</a></li>
             <li><a href="#contacto" data-nav-link>Contacto</a></li>
           </ul>
-          <a class="btn btn-dark nav-cta" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
-            Contame sobre tu proyecto <span aria-hidden="true">→</span>
+          <a class="btn btn-primary nav-cta" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
+            Contame sobre tu proyecto <span class="btn-arrow" aria-hidden="true">→</span>
           </a>
           <p class="nav-panel-foot">Anisacate, Córdoba, Argentina</p>
         </div>
@@ -139,80 +195,121 @@
 
   <main id="contenido">
 
-    <!-- ============ 1 · HERO ============ -->
+    <!-- ============ HERO ============ -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true">
-        <img src="assets/img/hero-vivienda.svg" alt="" width="1600" height="1200" fetchpriority="high">
-      </div>
-
-      <div class="container hero-inner">
+      <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow eyebrow-light reveal">Arquitecta en Anisacate, Córdoba</p>
-          <h1 class="hero-title reveal" id="hero-title">
-            Arquitectura pensada para tu <em>forma de vivir.</em>
-          </h1>
-          <p class="hero-lead reveal">
-            Proyectos, documentación y acompañamiento técnico para construir, transformar y regularizar tus espacios.
-          </p>
-          <div class="hero-actions reveal">
-            <a class="btn btn-accent btn-lg" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
+          <p class="eyebrow">Arquitecta · Anisacate, Córdoba</p>
+          <h1 class="hero-title" id="hero-title">Arquitectura pensada para tu <em>forma de vivir.</em></h1>
+          <p class="hero-lead">Proyectos, documentación y acompañamiento técnico para construir, transformar y regularizar tus espacios.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
               Contame sobre tu proyecto <span class="btn-arrow" aria-hidden="true">→</span>
             </a>
-            <a class="btn btn-ghost-light btn-lg" href="#servicios">Conocé mis servicios</a>
+            <a class="btn btn-line btn-lg" href="#servicios">Conocé mis servicios</a>
           </div>
-          <p class="hero-note reveal">
-            <span class="dot" aria-hidden="true"></span>
-            Atención profesional en Anisacate y localidades cercanas.
-          </p>
+          <p class="hero-note"><span class="dot" aria-hidden="true"></span>Atención profesional en Anisacate y localidades cercanas.</p>
         </div>
+
+        <figure class="sheet hero-sheet">
+          <svg class="elevation" viewBox="20 36 880 650" role="img" aria-labelledby="elev-title">
+            <title id="elev-title">Dibujo ilustrativo del alzado de una vivienda contemporánea, con cotas y ejes</title>
+            <!-- sol -->
+            <circle class="fade sun" style="--t:1.9s" cx="760" cy="168" r="58"/>
+            <circle class="draw dim" style="--t:1.7s" pathLength="1" cx="760" cy="168" r="74"/>
+            <!-- ejes -->
+            <g class="fade axes" style="--t:.1s">
+              <path d="M180 84 V600 M560 84 V600 M820 84 V600"/>
+            </g>
+            <g class="fade axis-tags" style="--t:.2s">
+              <circle cx="180" cy="62" r="15"/><circle cx="560" cy="62" r="15"/><circle cx="820" cy="62" r="15"/>
+              <text x="180" y="67">A</text><text x="560" y="67">B</text><text x="820" y="67">C</text>
+            </g>
+            <!-- rellenos -->
+            <rect class="fade glass" style="--t:1.2s" x="180" y="440" width="380" height="108"/>
+            <rect class="fade glass" style="--t:1.3s" x="380" y="352" width="380" height="44"/>
+            <rect class="fade corten" style="--t:1.4s" x="640" y="440" width="26" height="108"/>
+            <rect class="fade shade" style="--t:1.4s" x="666" y="440" width="154" height="108"/>
+            <path class="fade canopy-fill" style="--t:1.5s" d="M34 446 C22 414 56 394 82 402 C90 376 134 370 150 392 C176 382 204 404 192 430 C212 442 198 470 172 466 C152 484 110 482 96 466 C70 478 38 468 34 446 Z"/>
+            <!-- líneas -->
+            <path class="draw ln-heavy" style="--t:.3s" pathLength="1" d="M40 560 H880"/>
+            <path class="draw ln" style="--t:.45s" pathLength="1" d="M170 548 H830 V560 H170 Z"/>
+            <path class="draw ln" style="--t:.55s" pathLength="1" d="M180 548 V440 H560 V548"/>
+            <path class="draw ln" style="--t:.65s" pathLength="1" d="M560 440 H666 V548 M640 440 V548"/>
+            <path class="draw ln" style="--t:.75s" pathLength="1" d="M300 440 V320 H820 V440 H300"/>
+            <path class="draw ln-heavy" style="--t:.85s" pathLength="1" d="M290 308 H830 V320 H290 Z"/>
+            <path class="draw ln" style="--t:.9s" pathLength="1" d="M816 440 V548"/>
+            <path class="draw ln-thin" style="--t:.95s" pathLength="1" d="M234 440 V548 M288 440 V548 M342 440 V548 M396 440 V548 M450 440 V548 M504 440 V548"/>
+            <path class="draw ln" style="--t:1s" pathLength="1" d="M380 352 H760 V396 H380 Z"/>
+            <path class="draw ln-thin" style="--t:1.05s" pathLength="1" d="M475 352 V396 M570 352 V396 M665 352 V396"/>
+            <path class="draw ln-thin" style="--t:1.1s" pathLength="1" d="M646 440 V548 M652 440 V548 M658 440 V548"/>
+            <!-- árbol -->
+            <path class="draw ln" style="--t:.9s" pathLength="1" d="M112 548 C114 506 106 478 94 456 M110 504 C122 486 138 474 156 466"/>
+            <path class="draw ln-thin" style="--t:1s" pathLength="1" d="M34 446 C22 414 56 394 82 402 C90 376 134 370 150 392 C176 382 204 404 192 430 C212 442 198 470 172 466 C152 484 110 482 96 466 C70 478 38 468 34 446 Z"/>
+            <!-- persona (escala) -->
+            <g class="fade ln-thin" style="--t:1.6s">
+              <circle cx="740" cy="498" r="7"/>
+              <path d="M740 505 V529 M740 529 L732 548 M740 529 L748 548 M740 511 L731 525 M740 511 L750 523"/>
+            </g>
+            <!-- terreno -->
+            <path class="fade hatch" style="--t:.6s" d="M60 576 l14 -14 M90 576 l14 -14 M120 576 l14 -14 M150 576 l14 -14 M180 576 l14 -14 M210 576 l14 -14 M240 576 l14 -14 M270 576 l14 -14 M300 576 l14 -14 M330 576 l14 -14 M360 576 l14 -14 M390 576 l14 -14 M420 576 l14 -14 M450 576 l14 -14 M480 576 l14 -14 M510 576 l14 -14 M540 576 l14 -14 M570 576 l14 -14 M600 576 l14 -14 M630 576 l14 -14 M660 576 l14 -14 M690 576 l14 -14 M720 576 l14 -14 M750 576 l14 -14 M780 576 l14 -14 M810 576 l14 -14 M840 576 l14 -14"/>
+            <!-- cotas -->
+            <path class="draw dim" style="--t:1.5s" pathLength="1" d="M180 572 V636 M560 572 V636 M820 572 V636 M180 626 H820 M174 632 L186 620 M554 632 L566 620 M814 632 L826 620"/>
+            <path class="draw dim" style="--t:1.65s" pathLength="1" d="M180 662 H820 M174 668 L186 656 M814 668 L826 656 M180 640 V670 M820 640 V670"/>
+            <path class="draw dim" style="--t:1.6s" pathLength="1" d="M846 560 V308 M840 566 L852 554 M840 446 L852 434 M840 314 L852 302 M832 440 H852 M832 308 H852"/>
+            <g class="fade dim-text" style="--t:1.9s">
+              <text x="370" y="618">8,45</text>
+              <text x="690" y="618">5,75</text>
+              <text x="500" y="655">14,20</text>
+              <text x="836" y="500" transform="rotate(-90 836 500)">2,70</text>
+              <text x="836" y="374" transform="rotate(-90 836 374)">2,95</text>
+            </g>
+            <!-- anotación -->
+            <path class="draw dim" style="--t:2s" pathLength="1" d="M520 352 C540 300 570 262 616 246"/>
+            <g class="fade note" style="--t:2.2s"><text x="624" y="250">luz del oeste</text></g>
+          </svg>
+          <figcaption class="titleblock">
+            <dl>
+              <div><dt>Proyecto</dt><dd>Tu vivienda</dd></div>
+              <div><dt>Ubicación</dt><dd>Anisacate y alrededores</dd></div>
+              <div><dt>Escala</dt><dd>1:100</dd></div>
+              <div><dt>Profesional</dt><dd>Arq. Nadia Banegas</dd></div>
+            </dl>
+            <p class="titleblock-note">Dibujo ilustrativo</p>
+          </figcaption>
+        </figure>
       </div>
 
-      <div class="hero-bar">
-        <div class="container hero-bar-inner">
-          <a class="scroll-cue" href="#propuesta" aria-label="Explorar la página">
-            <span class="scroll-cue-line" aria-hidden="true"></span>
-            <span class="scroll-cue-text">Explorar</span>
-          </a>
-          <ul class="hero-facts" aria-label="Datos principales">
-            <li><span>Formación</span>FAUD · Universidad Nacional de Córdoba</li>
-            <li><span>Zona</span>Anisacate y localidades cercanas</li>
-            <li><span>Atención</span>Directa y personalizada</li>
-          </ul>
-        </div>
+      <div class="wrap">
+        <ul class="hero-facts" aria-label="Datos principales">
+          <li><span>Formación</span>FAUD · Universidad Nacional de Córdoba</li>
+          <li><span>Zona de trabajo</span>Anisacate y localidades cercanas</li>
+          <li><span>Atención</span>Directa y personalizada</li>
+          <li><span>Consultas</span><a href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">WhatsApp +54 9 3547 59-1959</a></li>
+        </ul>
       </div>
     </section>
 
-    <!-- Franja de servicios -->
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-track">
-        <span>Planos municipales</span><span>Relevamientos</span><span>Proyectos arquitectónicos</span><span>Ampliaciones y remodelaciones</span><span>Conducción técnica de obra</span><span>Asesoramiento profesional</span><span>Gestión municipal</span>
-        <span>Planos municipales</span><span>Relevamientos</span><span>Proyectos arquitectónicos</span><span>Ampliaciones y remodelaciones</span><span>Conducción técnica de obra</span><span>Asesoramiento profesional</span><span>Gestión municipal</span>
-      </div>
-    </div>
-
-    <!-- ============ 2 · PROPUESTA DE VALOR ============ -->
-    <section class="section value" id="propuesta" aria-labelledby="value-title">
-      <div class="container">
+    <!-- ============ PROPUESTA DE VALOR ============ -->
+    <section class="section band-white" id="propuesta" aria-labelledby="value-title">
+      <div class="wrap">
+        <p class="sheet-code"><span>Lám. 02</span>Enfoque</p>
         <div class="value-head">
-          <p class="eyebrow reveal">Enfoque</p>
-          <h2 class="section-title reveal" id="value-title">Cada proyecto empieza con una buena idea.</h2>
-          <p class="value-text reveal">
-            Detrás de cada espacio hay una necesidad, una historia y una forma particular de vivir. Mi trabajo consiste en transformar esas necesidades en soluciones arquitectónicas funcionales, viables y adaptadas a cada situación.
-          </p>
+          <h2 class="section-title" id="value-title">Cada proyecto empieza con una <em>buena idea.</em></h2>
+          <p class="lead">Detrás de cada espacio hay una necesidad, una historia y una forma particular de vivir. Mi trabajo consiste en transformar esas necesidades en soluciones arquitectónicas funcionales, viables y adaptadas a cada situación.</p>
         </div>
-
         <ol class="pillars">
-          <li class="pillar reveal">
+          <li class="pillar">
             <span class="pillar-num">01</span>
             <h3 class="pillar-title">Atención personalizada</h3>
             <p>Cada proyecto recibe una mirada particular, con comunicación directa y seguimiento cercano.</p>
           </li>
-          <li class="pillar reveal">
+          <li class="pillar">
             <span class="pillar-num">02</span>
             <h3 class="pillar-title">Soluciones a medida</h3>
             <p>Propuestas adaptadas al terreno, las necesidades y las posibilidades de cada cliente.</p>
           </li>
-          <li class="pillar reveal">
+          <li class="pillar">
             <span class="pillar-num">03</span>
             <h3 class="pillar-title">Acompañamiento profesional</h3>
             <p>Asistencia técnica y orientación durante las distintas etapas del proyecto.</p>
@@ -221,192 +318,163 @@
       </div>
     </section>
 
-    <!-- ============ 3 · SERVICIOS ============ -->
-    <section class="section services" id="servicios" aria-labelledby="services-title">
-      <div class="container">
-        <div class="section-head split">
-          <div>
-            <p class="eyebrow reveal">Servicios</p>
-            <h2 class="section-title reveal" id="services-title">¿Qué necesitás resolver?</h2>
-          </div>
-          <p class="section-sub reveal">Servicios profesionales para acompañarte en cada etapa de tu proyecto.</p>
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section" id="servicios" aria-labelledby="services-title">
+      <div class="wrap">
+        <p class="sheet-code"><span>Lám. 03</span>Servicios</p>
+        <div class="section-head">
+          <h2 class="section-title" id="services-title">¿Qué necesitás <em>resolver?</em></h2>
+          <p class="lead">Servicios profesionales para acompañarte en cada etapa de tu proyecto.</p>
         </div>
 
         <ul class="service-grid">
-          <li class="service-card reveal">
+          <li class="service">
             <div class="service-media">
               <img src="assets/img/servicio-planos.svg" alt="" width="800" height="600" loading="lazy" decoding="async">
-              <span class="service-num">01</span>
             </div>
-            <div class="service-body">
-              <h3 class="service-title">Planos municipales</h3>
-              <p>Documentación técnica y elaboración de planos para gestionar la regularización y aprobación de construcciones. Incluye la gestión y tramitación de la documentación municipal.</p>
-              <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Planos municipales" target="_blank" rel="noopener">
-                Consultar por este servicio <span aria-hidden="true">→</span>
-              </a>
-            </div>
+            <p class="service-code">Servicio 01</p>
+            <h3 class="service-title">Planos municipales</h3>
+            <p class="service-desc">Documentación técnica y elaboración de planos para gestionar la regularización y aprobación de construcciones. Incluye la gestión y tramitación de la documentación municipal.</p>
+            <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Planos municipales" target="_blank" rel="noopener">Consultar por este servicio <span aria-hidden="true">→</span></a>
           </li>
-          <li class="service-card reveal">
+          <li class="service">
             <div class="service-media">
               <img src="assets/img/servicio-relevamientos.svg" alt="" width="800" height="600" loading="lazy" decoding="async">
-              <span class="service-num">02</span>
             </div>
-            <div class="service-body">
-              <h3 class="service-title">Relevamientos</h3>
-              <p>Medición y documentación gráfica del estado actual de una propiedad para conocer sus características y trabajar sobre una base precisa.</p>
-              <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Relevamientos" target="_blank" rel="noopener">
-                Consultar por este servicio <span aria-hidden="true">→</span>
-              </a>
-            </div>
+            <p class="service-code">Servicio 02</p>
+            <h3 class="service-title">Relevamientos</h3>
+            <p class="service-desc">Medición y documentación gráfica del estado actual de una propiedad para conocer sus características y trabajar sobre una base precisa.</p>
+            <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Relevamientos" target="_blank" rel="noopener">Consultar por este servicio <span aria-hidden="true">→</span></a>
           </li>
-          <li class="service-card reveal">
+          <li class="service">
             <div class="service-media">
               <img src="assets/img/servicio-proyectos.svg" alt="" width="800" height="600" loading="lazy" decoding="async">
-              <span class="service-num">03</span>
             </div>
-            <div class="service-body">
-              <h3 class="service-title">Proyectos arquitectónicos</h3>
-              <p>Diseño y desarrollo de proyectos adaptados a tus necesidades, preferencias y características del terreno.</p>
-              <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Proyectos arquitectónicos" target="_blank" rel="noopener">
-                Consultar por este servicio <span aria-hidden="true">→</span>
-              </a>
-            </div>
+            <p class="service-code">Servicio 03</p>
+            <h3 class="service-title">Proyectos arquitectónicos</h3>
+            <p class="service-desc">Diseño y desarrollo de proyectos adaptados a tus necesidades, preferencias y características del terreno.</p>
+            <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Proyectos arquitectónicos" target="_blank" rel="noopener">Consultar por este servicio <span aria-hidden="true">→</span></a>
           </li>
-          <li class="service-card reveal">
+          <li class="service">
             <div class="service-media">
               <img src="assets/img/servicio-ampliaciones.svg" alt="" width="800" height="600" loading="lazy" decoding="async">
-              <span class="service-num">04</span>
             </div>
-            <div class="service-body">
-              <h3 class="service-title">Ampliaciones y remodelaciones</h3>
-              <p>Transformación de espacios existentes para mejorar su funcionalidad, distribución y estética.</p>
-              <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Ampliaciones y remodelaciones" target="_blank" rel="noopener">
-                Consultar por este servicio <span aria-hidden="true">→</span>
-              </a>
-            </div>
+            <p class="service-code">Servicio 04</p>
+            <h3 class="service-title">Ampliaciones y remodelaciones</h3>
+            <p class="service-desc">Transformación de espacios existentes para mejorar su funcionalidad, distribución y estética.</p>
+            <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Ampliaciones y remodelaciones" target="_blank" rel="noopener">Consultar por este servicio <span aria-hidden="true">→</span></a>
           </li>
-          <li class="service-card reveal">
+          <li class="service">
             <div class="service-media">
               <img src="assets/img/servicio-obra.svg" alt="" width="800" height="600" loading="lazy" decoding="async">
-              <span class="service-num">05</span>
             </div>
-            <div class="service-body">
-              <h3 class="service-title">Conducción técnica de obra</h3>
-              <p>Acompañamiento y seguimiento técnico de los trabajos para favorecer una correcta ejecución del proyecto.</p>
-              <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Conducción técnica de obra" target="_blank" rel="noopener">
-                Consultar por este servicio <span aria-hidden="true">→</span>
-              </a>
-            </div>
+            <p class="service-code">Servicio 05</p>
+            <h3 class="service-title">Conducción técnica de obra</h3>
+            <p class="service-desc">Acompañamiento y seguimiento técnico de los trabajos para favorecer una correcta ejecución del proyecto.</p>
+            <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Conducción técnica de obra" target="_blank" rel="noopener">Consultar por este servicio <span aria-hidden="true">→</span></a>
           </li>
-          <li class="service-card reveal">
+          <li class="service">
             <div class="service-media">
               <img src="assets/img/servicio-asesoramiento.svg" alt="" width="800" height="600" loading="lazy" decoding="async">
-              <span class="service-num">06</span>
             </div>
-            <div class="service-body">
-              <h3 class="service-title">Asesoramiento profesional</h3>
-              <p>Orientación para evaluar alternativas, resolver dudas y tomar decisiones antes de comenzar una obra.</p>
-              <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Asesoramiento profesional" target="_blank" rel="noopener">
-                Consultar por este servicio <span aria-hidden="true">→</span>
-              </a>
-            </div>
+            <p class="service-code">Servicio 06</p>
+            <h3 class="service-title">Asesoramiento profesional</h3>
+            <p class="service-desc">Orientación para evaluar alternativas, resolver dudas y tomar decisiones antes de comenzar una obra.</p>
+            <a class="service-cta" href="https://wa.me/5493547591959" data-wa data-service="Asesoramiento profesional" target="_blank" rel="noopener">Consultar por este servicio <span aria-hidden="true">→</span></a>
           </li>
         </ul>
 
-        <div class="inline-cta reveal">
-          <p class="inline-cta-text">¿No sabés bien qué servicio necesitás? <span>Contame tu situación y lo vemos juntos.</span></p>
-          <a class="btn btn-accent" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
+        <div class="cta-strip">
+          <p>¿No sabés bien qué servicio necesitás? <strong>Contame tu situación y lo vemos juntos.</strong></p>
+          <a class="btn btn-primary" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
             Contame sobre tu proyecto <span class="btn-arrow" aria-hidden="true">→</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ============ 4 · SOBRE NADIA ============ -->
-    <section class="section about" id="sobre-mi" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <figure class="about-media reveal">
-          <span class="about-frame" aria-hidden="true"></span>
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section band-sand" id="sobre-mi" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <figure class="sheet about-sheet">
           <!-- Reemplazar por una fotografía profesional de Nadia (ver README). -->
           <img src="assets/img/estudio-mesa.svg" alt="Ilustración de una mesa de trabajo de arquitectura con planos, escalímetro y lápiz" width="900" height="1100" loading="lazy" decoding="async">
-          <figcaption class="about-badge"><strong>FAUD</strong><span>Universidad Nacional de Córdoba</span></figcaption>
+          <figcaption class="titleblock titleblock-compact">
+            <dl>
+              <div><dt>Formación</dt><dd>FAUD · UNC</dd></div>
+              <div><dt>Base</dt><dd>Anisacate, Córdoba</dd></div>
+            </dl>
+          </figcaption>
         </figure>
 
         <div class="about-copy">
-          <p class="eyebrow reveal">Sobre mí</p>
-          <h2 class="section-title reveal" id="about-title">Soy Nadia, <em>arquitecta.</em></h2>
-          <div class="about-text reveal">
-            <p>Soy arquitecta egresada de la Facultad de Arquitectura, Urbanismo y Diseño de la Universidad Nacional de Córdoba.</p>
+          <p class="sheet-code"><span>Lám. 04</span>Sobre mí</p>
+          <h2 class="section-title" id="about-title">Soy Nadia, <em>arquitecta.</em></h2>
+          <p class="about-intro">Soy arquitecta egresada de la Facultad de Arquitectura, Urbanismo y Diseño de la Universidad Nacional de Córdoba.</p>
+          <div class="about-text">
             <p>Me dedico al desarrollo de proyectos arquitectónicos, relevamientos, documentación técnica y gestión municipal.</p>
             <p>Entiendo que cada proyecto representa una decisión importante. Por eso, trabajo desde una mirada personalizada, buscando comprender las necesidades de cada cliente y ofrecer soluciones funcionales, viables y adecuadas a cada caso.</p>
             <p>Mi objetivo es acompañarte con claridad y compromiso, desde las primeras ideas hasta las distintas etapas de tu proyecto.</p>
           </div>
-
-          <dl class="facts reveal">
-            <div><dt>Formación</dt><dd>FAUD · Universidad Nacional de Córdoba</dd></div>
-            <div><dt>Zona de trabajo</dt><dd>Anisacate y localidades cercanas</dd></div>
-            <div><dt>Atención</dt><dd>Directa y personalizada</dd></div>
-          </dl>
-
-          <a class="btn btn-dark reveal" href="https://wa.me/5493547591959" data-wa data-msg="Hola Nadia, estuve viendo tu página web y me gustaría que trabajemos en mi proyecto." target="_blank" rel="noopener">
+          <a class="btn btn-primary" href="https://wa.me/5493547591959" data-wa data-msg="Hola Nadia, estuve viendo tu página web y me gustaría que trabajemos en mi proyecto." target="_blank" rel="noopener">
             Trabajemos en tu proyecto <span class="btn-arrow" aria-hidden="true">→</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ============ 5 · PROYECTOS ============ -->
-    <section class="section projects" id="proyectos" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-head split">
-          <div>
-            <p class="eyebrow reveal">Proyectos</p>
-            <h2 class="section-title reveal" id="projects-title">Espacios, ideas y soluciones.</h2>
-          </div>
-          <p class="section-sub reveal">Una mirada sobre el trabajo arquitectónico.</p>
+    <!-- ============ PROYECTOS ============ -->
+    <section class="section band-white" id="proyectos" aria-labelledby="projects-title">
+      <div class="wrap">
+        <p class="sheet-code"><span>Lám. 05</span>Proyectos</p>
+        <div class="section-head">
+          <h2 class="section-title" id="projects-title">Espacios, ideas y <em>soluciones.</em></h2>
+          <p class="lead">Una mirada sobre el trabajo arquitectónico.</p>
         </div>
 
         <!-- Los proyectos se cargan desde js/content.js (solo material real de Nadia). -->
         <div class="project-gallery" data-projects hidden></div>
 
-        <div class="projects-empty reveal" data-projects-empty>
-          <div class="projects-empty-frames" aria-hidden="true">
-            <span></span><span></span><span></span>
+        <div class="projects-empty" data-projects-empty>
+          <div class="blank-sheets" aria-hidden="true">
+            <div class="blank-sheet"><span>P-01</span></div>
+            <div class="blank-sheet"><span>P-02</span></div>
+            <div class="blank-sheet"><span>P-03</span></div>
           </div>
           <div class="projects-empty-copy">
-            <p class="projects-empty-title">Portfolio en preparación.</p>
+            <h3 class="projects-empty-title">Portfolio en preparación.</h3>
             <p>Estoy seleccionando trabajos para compartir en este espacio. Si querés conocer ejemplos relacionados con tu consulta, escribime y te cuento sobre experiencias similares.</p>
-            <a class="btn btn-link" href="https://wa.me/5493547591959" data-wa data-msg="Hola Nadia, estuve viendo tu página web y me gustaría conocer ejemplos de trabajos similares a mi proyecto." target="_blank" rel="noopener">Consultar por trabajos similares</a>
+            <a class="btn btn-line" href="https://wa.me/5493547591959" data-wa data-msg="Hola Nadia, estuve viendo tu página web y me gustaría conocer ejemplos de trabajos similares a mi proyecto." target="_blank" rel="noopener">Consultar por trabajos similares</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ 6 · PROCESO ============ -->
-    <section class="section process is-dark" id="proceso" aria-labelledby="process-title">
-      <div class="container">
+    <!-- ============ PROCESO ============ -->
+    <section class="section" id="proceso" aria-labelledby="process-title">
+      <div class="wrap">
+        <p class="sheet-code"><span>Lám. 06</span>Proceso</p>
         <div class="section-head">
-          <p class="eyebrow reveal">Proceso</p>
-          <h2 class="section-title reveal" id="process-title">Tu proyecto, paso a paso.</h2>
+          <h2 class="section-title" id="process-title">Tu proyecto, <em>paso a paso.</em></h2>
         </div>
         <ol class="steps">
-          <li class="step reveal">
-            <span class="step-num">01</span>
+          <li class="step">
+            <span class="step-num">1</span>
             <h3 class="step-title">Primer contacto</h3>
             <p>Me contás qué necesitás y cuáles son tus objetivos.</p>
           </li>
-          <li class="step reveal">
-            <span class="step-num">02</span>
+          <li class="step">
+            <span class="step-num">2</span>
             <h3 class="step-title">Evaluación</h3>
             <p>Analizamos tu situación y las características del proyecto.</p>
           </li>
-          <li class="step reveal">
-            <span class="step-num">03</span>
+          <li class="step">
+            <span class="step-num">3</span>
             <h3 class="step-title">Propuesta</h3>
             <p>Definimos las soluciones y el alcance del trabajo.</p>
           </li>
-          <li class="step reveal">
-            <span class="step-num">04</span>
+          <li class="step">
+            <span class="step-num">4</span>
             <h3 class="step-title">Desarrollo y acompañamiento</h3>
             <p>Avanzamos con el trabajo profesional y el seguimiento correspondiente.</p>
           </li>
@@ -414,56 +482,48 @@
       </div>
     </section>
 
-    <!-- ============ 7 · RESEÑAS ============ -->
-    <section class="section reviews" id="resenas" aria-labelledby="reviews-title">
-      <div class="container">
-        <div class="section-head split">
-          <div>
-            <p class="eyebrow reveal">Reseñas</p>
-            <h2 class="section-title reveal" id="reviews-title">La experiencia de quienes confiaron.</h2>
-          </div>
+    <!-- ============ RESEÑAS ============ -->
+    <section class="section band-white" id="resenas" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <p class="sheet-code"><span>Lám. 07</span>Reseñas</p>
+        <div class="section-head">
+          <h2 class="section-title" id="reviews-title">La experiencia de quienes <em>confiaron.</em></h2>
         </div>
 
         <!-- Reseñas reales de Google: se cargan desde js/content.js -->
         <ul class="review-list" data-reviews hidden></ul>
 
-        <div class="google-card reveal">
-          <div class="google-card-brand">
-            <svg class="google-g" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-              <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-              <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-              <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-              <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-            </svg>
-            <div>
-              <p class="google-card-title">Reseñas en Google</p>
-              <p class="google-card-sub">Opiniones publicadas por clientes en el perfil de Nadia Banegas.</p>
-            </div>
+        <div class="google-card">
+          <svg class="google-g" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+            <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+            <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+            <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+          </svg>
+          <div class="google-card-copy">
+            <h3 class="google-card-title">Reseñas en Google</h3>
+            <p>Las opiniones de clientes se publican y verifican en el perfil de Google de Nadia Banegas. Podés leerlas todas ahí y, si trabajaste con Nadia, también dejar la tuya.</p>
           </div>
-          <p class="google-card-text">
-            Las reseñas se publican y verifican en Google. Podés leer todas las opiniones directamente en su perfil y, si trabajaste con Nadia, también dejar la tuya.
-          </p>
-          <a class="btn btn-outline" href="https://www.google.com/maps/place/Nadia+Banegas/data=!4m2!3m1!1s0x0:0x12adc37940f0b6f9" target="_blank" rel="noopener">
+          <a class="btn btn-line" href="https://www.google.com/maps/place/Nadia+Banegas/data=!4m2!3m1!1s0x0:0x12adc37940f0b6f9" target="_blank" rel="noopener">
             Ver todas las reseñas <span class="btn-arrow" aria-hidden="true">↗</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ============ 8 · PREGUNTAS FRECUENTES ============ -->
-    <section class="section faq" id="preguntas" aria-labelledby="faq-title">
-      <div class="container faq-grid">
+    <!-- ============ PREGUNTAS FRECUENTES ============ -->
+    <section class="section" id="preguntas" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
         <div class="faq-head">
-          <p class="eyebrow reveal">Preguntas frecuentes</p>
-          <h2 class="section-title reveal" id="faq-title">Antes de empezar.</h2>
-          <p class="section-sub reveal">Si tu duda no está acá, escribime y lo conversamos.</p>
+          <p class="sheet-code"><span>Lám. 08</span>Preguntas frecuentes</p>
+          <h2 class="section-title" id="faq-title">Antes de <em>empezar.</em></h2>
+          <p class="lead">Si tu duda no está acá, escribime y lo conversamos.</p>
         </div>
-
-        <div class="accordion reveal" data-accordion>
+        <div class="accordion" data-accordion>
           <div class="acc-item">
             <h3 class="acc-heading">
               <button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">
-                ¿Qué necesito para realizar un plano municipal?
+                <span>¿Qué necesito para realizar un plano municipal?</span>
                 <span class="acc-icon" aria-hidden="true"></span>
               </button>
             </h3>
@@ -473,11 +533,10 @@
               </div>
             </div>
           </div>
-
           <div class="acc-item">
             <h3 class="acc-heading">
               <button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">
-                ¿Puedo regularizar una construcción existente?
+                <span>¿Puedo regularizar una construcción existente?</span>
                 <span class="acc-icon" aria-hidden="true"></span>
               </button>
             </h3>
@@ -487,11 +546,10 @@
               </div>
             </div>
           </div>
-
           <div class="acc-item">
             <h3 class="acc-heading">
               <button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">
-                ¿Realizás proyectos de ampliación y remodelación?
+                <span>¿Realizás proyectos de ampliación y remodelación?</span>
                 <span class="acc-icon" aria-hidden="true"></span>
               </button>
             </h3>
@@ -501,11 +559,10 @@
               </div>
             </div>
           </div>
-
           <div class="acc-item">
             <h3 class="acc-heading">
               <button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">
-                ¿Trabajás en localidades cercanas a Anisacate?
+                <span>¿Trabajás en localidades cercanas a Anisacate?</span>
                 <span class="acc-icon" aria-hidden="true"></span>
               </button>
             </h3>
@@ -515,26 +572,24 @@
               </div>
             </div>
           </div>
-
           <div class="acc-item">
             <h3 class="acc-heading">
               <button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">
-                ¿Cómo puedo solicitar un presupuesto?
+                <span>¿Cómo puedo solicitar un presupuesto?</span>
                 <span class="acc-icon" aria-hidden="true"></span>
               </button>
             </h3>
             <div class="acc-panel" id="faq-5" role="region" aria-labelledby="faq-5-btn" hidden>
               <div class="acc-panel-inner">
                 <p>Escribime por WhatsApp y contame qué necesitás, dónde está la propiedad y, si los tenés, compartime fotos o documentación. Con esa información puedo orientarte y, si hace falta, coordinamos una visita para conocer el lugar y preparar una propuesta con el alcance del trabajo y los honorarios.</p>
-                <p><a class="acc-link" href="https://wa.me/5493547591959" data-wa data-msg="Hola Nadia, estuve viendo tu página web y quisiera solicitar un presupuesto para un proyecto." target="_blank" rel="noopener">Solicitar presupuesto por WhatsApp →</a></p>
+                <p><a class="text-link" href="https://wa.me/5493547591959" data-wa data-msg="Hola Nadia, estuve viendo tu página web y quisiera solicitar un presupuesto para un proyecto." target="_blank" rel="noopener">Solicitar presupuesto por WhatsApp →</a></p>
               </div>
             </div>
           </div>
-
           <div class="acc-item">
             <h3 class="acc-heading">
               <button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-6-btn">
-                ¿Puedo consultarte antes de comenzar una obra?
+                <span>¿Puedo consultarte antes de comenzar una obra?</span>
                 <span class="acc-icon" aria-hidden="true"></span>
               </button>
             </h3>
@@ -548,60 +603,41 @@
       </div>
     </section>
 
-    <!-- ============ 9 · CONTACTO ============ -->
+    <!-- ============ CONTACTO ============ -->
     <section class="contact" id="contacto" aria-labelledby="contact-title">
-      <div class="container contact-grid">
+      <div class="wrap contact-grid">
         <div class="contact-copy">
-          <p class="eyebrow eyebrow-light reveal">Contacto</p>
-          <h2 class="contact-title reveal" id="contact-title">¿Tenés un proyecto <em>en mente?</em></h2>
-          <p class="contact-text reveal">Contame qué necesitás. Podemos conversar sobre tu idea y evaluar juntos cómo avanzar.</p>
-
-          <a class="btn btn-light btn-xl reveal" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
+          <p class="sheet-code sheet-code-light"><span>Lám. 09</span>Contacto</p>
+          <h2 class="contact-title" id="contact-title">¿Tenés un proyecto <em>en mente?</em></h2>
+          <p class="contact-text">Contame qué necesitás. Podemos conversar sobre tu idea y evaluar juntos cómo avanzar.</p>
+          <a class="btn btn-accent btn-xl" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">
             <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.23 8.24c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06a6.76 6.76 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48a.92.92 0 0 0-.66.31c-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.24 3.74 1.58.68 2.2.74 2.99.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
             Escribir por WhatsApp
           </a>
-
-          <ul class="contact-list reveal">
-            <li>
-              <span class="contact-label">Zona de atención</span>
-              <span>Anisacate y localidades cercanas</span>
-            </li>
-            <li>
-              <span class="contact-label">WhatsApp</span>
-              <a href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">+54 9 3547 59-1959</a>
-            </li>
-            <li>
-              <span class="contact-label">Ubicación</span>
-              <span>Anisacate, Córdoba, Argentina</span>
-            </li>
-          </ul>
+          <dl class="contact-block">
+            <div><dt>Zona de atención</dt><dd>Anisacate y localidades cercanas</dd></div>
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener">+54 9 3547 59-1959</a></dd></div>
+            <div><dt>Ubicación</dt><dd>Anisacate, Córdoba, Argentina</dd></div>
+          </dl>
         </div>
 
-        <div class="contact-map reveal">
-          <div class="map-frame" data-map>
-            <iframe
-              title="Mapa de Anisacate, Córdoba, con la ubicación de Nadia Banegas en Google Maps"
-              src="https://maps.google.com/maps?q=Nadia%20Banegas%2C%20Anisacate%2C%20C%C3%B3rdoba&hl=es&z=13&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen></iframe>
+        <div class="contact-map">
+          <div class="map-frame">
+            <iframe title="Mapa de Anisacate, Córdoba, con la ubicación de Nadia Banegas en Google Maps" src="https://maps.google.com/maps?q=Nadia%20Banegas%2C%20Anisacate%2C%20C%C3%B3rdoba&amp;hl=es&amp;z=13&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
           </div>
-          <a class="map-link" href="https://www.google.com/maps/place/Nadia+Banegas/data=!4m2!3m1!1s0x0:0x12adc37940f0b6f9" target="_blank" rel="noopener">
-            Ver en Google Maps <span aria-hidden="true">↗</span>
-          </a>
+          <a class="map-link" href="https://www.google.com/maps/place/Nadia+Banegas/data=!4m2!3m1!1s0x0:0x12adc37940f0b6f9" target="_blank" rel="noopener">Ver en Google Maps <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ============ 10 · FOOTER ============ -->
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="wrap footer-grid">
       <div class="footer-brand">
         <p class="footer-name">Nadia Banegas</p>
         <p class="footer-role">Arquitecta</p>
-        <p class="footer-tag">Arquitectura, documentación y acompañamiento técnico.</p>
-        <p class="footer-place">Anisacate, Córdoba, Argentina.</p>
+        <p>Arquitectura, documentación y acompañamiento técnico.</p>
+        <p>Anisacate, Córdoba, Argentina.</p>
       </div>
       <nav class="footer-nav" aria-label="Enlaces del pie de página">
         <ul>
@@ -616,16 +652,15 @@
         <!-- Instagram: agregar aquí cuando se confirme el enlace real. -->
       </div>
     </div>
-    <div class="container footer-bottom">
+    <div class="wrap footer-bottom">
       <p>© 2026 Nadia Banegas. Todos los derechos reservados.</p>
-      <p class="footer-credit">Las ilustraciones del sitio son representativas y no corresponden a obras específicas.</p>
+      <p>Las ilustraciones del sitio son representativas y no corresponden a obras específicas.</p>
     </div>
   </footer>
 
-  <!-- WhatsApp flotante -->
-  <a class="wa-float" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener" aria-label="Escribir a Nadia por WhatsApp" data-wa-float>
+  <a class="wa-float" href="https://wa.me/5493547591959" data-wa target="_blank" rel="noopener" aria-label="Escribir a Nadia por WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.23 8.24c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06a6.76 6.76 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48a.92.92 0 0 0-.66.31c-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.24 3.74 1.58.68 2.2.74 2.99.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
-    <span class="wa-float-label">Consultar</span>
+    <span>Consultar</span>
   </a>
 
   <script src="js/content.js" defer></script>
