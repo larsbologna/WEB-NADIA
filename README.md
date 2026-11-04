@@ -15,13 +15,20 @@ robots.txt · sitemap.xml · site.webmanifest
 ```
 
 Para verlo en local: `python3 -m http.server` en la carpeta y abrir http://localhost:8000.
-Se puede publicar tal cual en Netlify, Vercel, GitHub Pages o cualquier hosting estático.
+## Publicación (GitHub Pages)
+
+Cada push a `main` publica el sitio con el workflow `.github/workflows/pages.yml`.
+URL: https://larsbologna.github.io/WEB-NADIA/
+
+Requisito único: en GitHub → **Settings → Pages → Build and deployment → Source**, elegir **GitHub Actions**.
+
+Nota: en una subruta de `github.io`, los buscadores no leen `robots.txt`; con un dominio propio sí. Mientras tanto, el sitemap se puede enviar directamente en Google Search Console.
 
 ## Pendientes antes de publicar (datos a confirmar con Nadia)
 
 | Dato | Dónde | Estado |
 |---|---|---|
-| **Dominio definitivo** | `index.html` (canonical, Open Graph, JSON-LD), `robots.txt`, `sitemap.xml` | Se usa `https://nadiabanegas.com.ar/` como provisional: reemplazar en todos los archivos. |
+| **Dominio definitivo** | `index.html` (canonical, Open Graph, JSON-LD), `robots.txt`, `sitemap.xml`, `404.html` | Publicado en `https://larsbologna.github.io/WEB-NADIA/`. Al pasar a un dominio propio, reemplazar esa URL en esos archivos y cambiar las rutas `/WEB-NADIA/` de `404.html` por `/`. |
 | **Matrícula profesional** | Sección "Sobre mí" (lista `.facts`) | No se pudo verificar su web actual, así que **no se muestra**. Agregar una fila `<div><dt>Matrícula</dt><dd>…</dd></div>` con el dato verificado. |
 | **Fotografía de Nadia** | `index.html` → `.about-media img` | Hoy muestra una ilustración de mesa de trabajo. Reemplazar por una foto profesional en WebP/AVIF (proporción 9:11, unos 1200 × 1467 px). |
 | **Foto del hero** | `index.html` → `.hero-image img` | Ilustración original de una vivienda serrana. Si Nadia tiene una fotografía propia de calidad, reemplazarla por un WebP de unos 1600 × 2000 px. |

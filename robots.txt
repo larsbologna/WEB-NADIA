@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nadiabanegas.com.ar/sitemap.xml
+Sitemap: https://larsbologna.github.io/WEB-NADIA/sitemap.xml
