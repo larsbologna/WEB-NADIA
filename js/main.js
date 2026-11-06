@@ -9,7 +9,7 @@
 
   var content = window.SITE_CONTENT || {};
   var wa = content.whatsapp || {
-    number: '5493547591959',
+    number: '5493547662066',
     defaultMessage: 'Hola Nadia, estuve viendo tu página web y quisiera hacerte una consulta sobre un proyecto.',
     serviceMessage: 'Hola Nadia, estuve viendo tu página web y quisiera hacerte una consulta sobre el servicio de {servicio}.'
   };
