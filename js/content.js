@@ -8,7 +8,7 @@
 window.SITE_CONTENT = {
   whatsapp: {
     // Número en formato internacional, sin "+" ni espacios.
-    number: '5493547591959',
+    number: '5493547662066',
     // Mensaje general (CTA principal).
     defaultMessage: 'Hola Nadia, estuve viendo tu página web y quisiera hacerte una consulta sobre un proyecto.',
     // Mensaje para los CTA de cada servicio. {servicio} se reemplaza por el nombre.
