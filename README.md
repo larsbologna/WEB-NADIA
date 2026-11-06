@@ -5,16 +5,31 @@ Sitio web estático (HTML + CSS + JS, sin dependencias ni build) para Nadia Bane
 ## Estructura
 
 ```
-index.html            Página principal (todas las secciones)
-404.html              Página de error
-css/styles.css        Estilos (mobile first)
-js/content.js         Contenido editable: WhatsApp, proyectos y reseñas
-js/main.js            Interacciones (menú, acordeón, animaciones, WhatsApp, galería)
-assets/img/           Ilustraciones SVG, íconos e imagen para redes (og-image.jpg)
-robots.txt · sitemap.xml · site.webmanifest
+index.html                  Inicio: servicios, proyectos destacados, sobre mí, proceso, reseñas, contacto
+proyectos.html              Los 10 proyectos con planta, fotos de obra y video
+preguntas-frecuentes.html   Las preguntas frecuentes de Nadia, por categoría
+tools/build_site.py         Genera las tres páginas: todo el contenido se edita acá
+css/styles.css              Estilos (mobile first)
+js/content.js               Número y mensajes de WhatsApp
+js/main.js                  Menú, acordeón, visor de fotos y enlaces de WhatsApp
+assets/img/proyectos/       Fotos de cada proyecto en WebP (NN.webp y NN-thumb.webp)
+robots.txt · sitemap.xml · site.webmanifest · 404.html
 ```
 
+## Cómo editar el contenido
+
+Los textos, los proyectos, las reseñas y las preguntas frecuentes están en `tools/build_site.py`.
+Después de editarlo, regenerá las páginas:
+
+```
+python3 tools/build_site.py
+```
+
+Para agregar un proyecto, sumá sus fotos a `assets/img/proyectos/pNN/` (01.webp, 01-thumb.webp, 02.webp…)
+y una entrada en la lista `PROJECTS`. El script necesita Pillow solo para leer el tamaño de las fotos.
+
 Para verlo en local: `python3 -m http.server` en la carpeta y abrir http://localhost:8000.
+
 ## Publicación (GitHub Pages)
 
 Cada push a `main` publica el sitio con el workflow `.github/workflows/pages.yml`.
@@ -24,33 +39,37 @@ Requisito único: en GitHub → **Settings → Pages → Build and deployment �
 
 Nota: en una subruta de `github.io`, los buscadores no leen `robots.txt`; con un dominio propio sí. Mientras tanto, el sitemap se puede enviar directamente en Google Search Console.
 
-## Pendientes antes de publicar (datos a confirmar con Nadia)
+## Datos verificados (tomados del sitio anterior de Nadia)
 
-| Dato | Dónde | Estado |
-|---|---|---|
-| **Dominio definitivo** | `index.html` (canonical, Open Graph, JSON-LD), `robots.txt`, `sitemap.xml`, `404.html` | Publicado en `https://larsbologna.github.io/WEB-NADIA/`. Al pasar a un dominio propio, reemplazar esa URL en esos archivos y cambiar las rutas `/WEB-NADIA/` de `404.html` por `/`. |
-| **Matrícula profesional** | Sección "Sobre mí" (lista `.facts`) | No se pudo verificar su web actual, así que **no se muestra**. Agregar una fila `<div><dt>Matrícula</dt><dd>…</dd></div>` con el dato verificado. |
-| **Fotografía de Nadia** | `index.html` → `.about-media img` | Hoy muestra una ilustración de mesa de trabajo dentro de una lámina con rótulo. Reemplazar por una foto profesional en WebP/AVIF (proporción 9:11, unos 1200 × 1467 px). |
-| **Imagen del hero** | `index.html` → `.hero-sheet` | Alzado ilustrativo dibujado en SVG, con rótulo "Dibujo ilustrativo". Si Nadia tiene una fotografía propia de calidad, puede reemplazar el `<svg class="elevation">` por un `<img>` en WebP. |
-| **Proyectos** | `js/content.js` → `projects` | Vacío: se muestra "Portfolio en preparación". Cargar solo obras reales con fotos propias; la galería editorial y el visor se activan solos. |
-| **Reseñas de Google** | `js/content.js` → `reviews` | Vacío: se muestra el bloque de Google con el enlace "Ver todas las reseñas". Copiar textualmente reseñas reales del perfil. |
-| **Correo electrónico** | Sección Contacto (`.contact-list`) | Agregar cuando Nadia lo confirme. |
-| **Instagram** | Footer (`.footer-social`) | Agregar solo si hay un enlace real. |
+- WhatsApp laboral: +54 9 3547 66-2066
+- Correo: nadiabbanegas@gmail.com
+- Matrícula profesional: M.P. 13396
+- Trayectoria: más de 15 años
+- Reseñas: transcriptas textualmente de las publicadas en su sitio
+- Proyectos, fotos, videos y preguntas frecuentes: de su sitio en Google Sites
+
+## Pendientes
+
+| Dato | Estado |
+|---|---|
+| **Dominio propio** | Publicado en `https://larsbologna.github.io/WEB-NADIA/`. Al pasar a un dominio propio, cambiar `SITE_URL` en `tools/build_site.py`, regenerar, y actualizar `robots.txt` y las rutas `/WEB-NADIA/` de `404.html`. |
+| **Foto de Nadia** | Opcional: la sección "Sobre mí" hoy no lleva imagen. |
+| **Instagram** | Agregar al pie solo si hay un enlace real. |
 
 ## WhatsApp
 
-- Número y mensajes en `js/content.js` → `whatsapp`.
+- Número y mensajes en `js/content.js` → `whatsapp`. El número también figura en `tools/build_site.py` (`WHATSAPP`): si cambia, actualizá los dos y regenerá.
 - Cualquier enlace con `data-wa` recibe el mensaje general precargado.
 - Con `data-service="Nombre"` se arma el mensaje personalizado del servicio.
 - Con `data-msg="…"` se define un mensaje específico.
 
 ## Imágenes
 
-Las ilustraciones (`assets/img/*.svg`) son originales, livianas y vectoriales. No representan obras de Nadia, y así lo aclara el footer. Las fotos reales que se agreguen deben exportarse en **WebP o AVIF** con `width`/`height` y `loading="lazy"` (salvo el hero).
+Las fotos de proyectos están en WebP en dos tamaños: miniatura (640 px) para la página y completa (1400 px) para el visor, que se carga solo al abrirlo. Los dibujos de servicios son SVG.
 
 ## SEO
 
 - Title, meta description, canonical, Open Graph y Twitter Card.
-- JSON-LD `ProfessionalService` + `Person` (sin dirección exacta, horarios ni datos no confirmados).
+- JSON-LD `ProfessionalService` + `Person` con matrícula, correo y zonas de trabajo (sin dirección exacta ni horarios), y `FAQPage` en la página de preguntas frecuentes.
 - `sitemap.xml` y `robots.txt` (actualizar el dominio).
 - Una vez publicado: dar de alta el sitio en Google Search Console y agregar la URL de la web en el Perfil de Empresa de Google.

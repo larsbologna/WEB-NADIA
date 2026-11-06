@@ -1,47 +1,18 @@
 /* ==========================================================================
-   Contenido editable del sitio
+   Configuración de WhatsApp
    --------------------------------------------------------------------------
-   Este archivo concentra los datos que Nadia puede actualizar sin tocar el
-   diseño. IMPORTANTE: cargar únicamente información real y verificable.
+   Los textos de la web (servicios, proyectos, reseñas y preguntas
+   frecuentes) se editan en tools/build_site.py y se regeneran con:
+       python3 tools/build_site.py
    ========================================================================== */
 
 window.SITE_CONTENT = {
   whatsapp: {
-    // Número en formato internacional, sin "+" ni espacios.
+    // Número laboral en formato internacional, sin "+" ni espacios.
     number: '5493547662066',
     // Mensaje general (CTA principal).
     defaultMessage: 'Hola Nadia, estuve viendo tu página web y quisiera hacerte una consulta sobre un proyecto.',
-    // Mensaje para los CTA de cada servicio. {servicio} se reemplaza por el nombre.
+    // Mensaje de cada servicio. {servicio} se reemplaza por el nombre.
     serviceMessage: 'Hola Nadia, estuve viendo tu página web y quisiera hacerte una consulta sobre el servicio de {servicio}.'
-  },
-
-  /* ------------------------------------------------------------------------
-     PROYECTOS — solo obras reales de Nadia, con fotografías propias.
-     Mientras la lista esté vacía, la web muestra el bloque "Portfolio en
-     preparación". Ejemplo de un elemento:
-
-     {
-       image: 'assets/img/proyectos/vivienda-anisacate.webp', // WebP o AVIF
-       width: 1600, height: 1200,
-       alt: 'Fachada de la vivienda al atardecer',
-       name: 'Vivienda en Anisacate',
-       type: 'Proyecto arquitectónico',
-       description: 'Breve descripción del trabajo realizado.'
-     }
-     ------------------------------------------------------------------------ */
-  projects: [],
-
-  /* ------------------------------------------------------------------------
-     RESEÑAS — copiar textualmente reseñas reales publicadas en el perfil de
-     Google de Nadia. No editar el contenido ni inventar calificaciones.
-     Ejemplo:
-
-     {
-       author: 'Nombre tal como figura en Google',
-       rating: 5,            // estrellas reales de esa reseña
-       date: 'Marzo 2026',   // fecha aproximada indicada por Google
-       text: 'Texto completo de la reseña.'
-     }
-     ------------------------------------------------------------------------ */
-  reviews: []
+  }
 };
