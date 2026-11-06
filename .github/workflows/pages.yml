@@ -30,7 +30,8 @@ jobs:
       - name: Preparar sitio
         run: |
           mkdir -p _site
-          cp -r index.html 404.html robots.txt sitemap.xml site.webmanifest css js assets _site/
+          cp ./*.html robots.txt sitemap.xml site.webmanifest _site/
+          cp -r css js assets _site/
 
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
